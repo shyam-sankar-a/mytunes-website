@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+    --black-gradient: linear-gradient(144.39deg,
+            #ffffff -278.56%,
+            #6d6d6d -78.47%,
+            #11101d 91.61%);
+    --card-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.text-gradient {
+    background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,
+            #def9fa 0.89%,
+            #bef3f5 17.23%,
+            #9dedf0 42.04%,
+            #7de7eb 55.12%,
+            #5ce1e6 71.54%,
+            #33bbcf 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.bg-blue-gradient {
+    background: linear-gradient(157.81deg,
+            #D9D9D9 -43.27%,
+            #c7c7c7 -21.24%,
+            #b2b1b1 12.19%,
+            #9c9c9c 29.82%,
+            #929090 51.94%,
+            #6a6767 90.29%);
+}
+
+.bg-hero-background {
+    background-image: url('/src/assets/img/hero-main.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-hero-sub-background {
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.688), rgba(0, 0, 0, 0.688)), url('/src/assets/img/hero-sub-bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
